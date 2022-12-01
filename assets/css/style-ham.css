@@ -1,0 +1,134 @@
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.span_menu {
+    visibility: visible;
+}
+
+#primary-nav {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: baseline;
+}
+
+#primary-nav .container {
+    padding: 0 10px;
+}
+
+#primary-nav ul {
+    background-color: #544bd7;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    display: grid;
+    align-content: center;
+    grid-column-gap: 9px;
+    grid-row-gap: 10px;
+    list-style-type: none;
+}
+
+@media (min-width: 848px) {
+    #primary-nav ul {
+        display: grid;
+    }
+}
+
+#primary-nav ul li a {
+    color: rgb(227, 227, 227);
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    transition: 0.4s ease-in;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+#primary-nav ul li a:hover,
+#primary-nav ul li a:focus {
+    background: #990816;
+}
+
+#primary-nav ul li a:active {
+    border: 2px solid lime;
+}
+
+.logo {
+    max-width: 120px;
+    padding: 1em;
+}
+
+.main-nav {
+    background: #262262;
+    grid-column: 2 / span 4;
+}
+
+#hamburger {
+    margin: 1em;
+    justify-self: end;
+    display: block;
+    background: #fff;
+    border: none;
+    font-size: 1.2em;
+    line-height: 1;
+    border-radius: 12px;
+}
+
+#hamburger #expanded {
+    display: none;
+}
+
+#hamburger svg {
+    width: 3em;
+    height: 3em;
+    background: white;
+}
+
+#hamburger span {
+    display: block;
+    position: relative;
+    top: 15px;
+}
+
+@media (min-width: 848px) {
+    #hamburger {
+        display: none;
+    }
+}
+
+#hamburger[aria-expanded='true'] {
+    color: rgb(0, 0, 0);
+}
+
+#hamburger[aria-expanded='true'] svg {
+    background: #262262;
+    fill: rgb(246, 147, 47);
+    border-radius: 100px;
+}
+
+#hamburger[aria-expanded='true'] span {
+    position: static;
+    
+}
+
+#hamburger[aria-expanded='true'] #expanded {
+    display: block;
+}
+
+#hamburger[aria-expanded="true"]+.main-nav {
+    display: block;
+}
+
+.js-enabled .main-nav {
+    display: none;
+}
+
+@media (min-width: 848px) {
+    .js-enabled .main-nav {
+        display: block;
+    }
+}

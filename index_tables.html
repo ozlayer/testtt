@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/style-ham.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+</head>
+
+<body class="all">
+
+    <h1 tabindex="0" class="header">Repositorio de consulta</h1>
+
+    <main>
+
+        <header class="main">
+            <nav id="primary-nav" aria-label="Main">
+                <div class="container">
+                    <a href="#" class="logo-holder">
+                        <img class="logo" src="./assets/img/logo-letras-rojas.png" alt="Homepage" />
+                    </a>
+                </div>
+                <button id="hamburger" aria-expanded="false">
+                    <span class="span_menu">Menu</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                </button>
+
+                <div class="main-nav">
+                    <ul class="container">
+                        <li>
+                            <a tabindex="0" href="#" aria-current="page">Home </a>
+                        </li>
+                        <li>
+                            <a href="#da_pe">Datos Personales</a>
+                        </li>
+                        <li>
+                            <a href="#parrafos">Párrafos</a>
+                        </li>
+                        <li>
+                            <a href="#im_ic">Imagenes e íconos</a>
+                        </li>
+                        <li>
+                            <a href="#table">Tablas</a>
+                        </li>
+                        <li>
+                            <a href="#foco">Foco</a>
+                        </li>
+                        <li>
+                            <a href="#tooltip">Tooltips</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="sc1">
+            <h2 tabindex="0" id="da_pe">Barra de navegación</h2>
+            <p>Para esta sección, se puede ver el código de la parte del menú para ver su modo resposivo <br>y su
+                respectivo código en HTML. </p>
+
+            <code class="cod">
+                        &lt;header class="main"&gt;<br>
+                        &lt;nav id="primary-nav" aria-label="Main"&gt;<br>
+                        &lt;div class="container"&gt;<br>
+                        &lt;a href="#" class="logo-holder"&gt;<br>
+                        &lt;img class="logo" src="./assets/img/logo-letras-rojas.png" alt="Homepage" /&gt;<br>
+                        &lt;/a&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;button id="hamburger" aria-expanded="false"&gt;<br>
+                        &lt;span class="span_menu">Menu&lt;/span&gt;<br>
+                        &lt;svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true"&gt;<br>
+                        &lt;path d="M0 0h24v24H0z" fill="none" /&gt;<br>
+                        &lt;path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /&gt;<br>
+                        &lt;/svg&gt;<br>
+                        &lt;/button&gt;<br>
+            
+                        &lt;div class="main-nav"&gt;<br>
+                        &lt;ul class="container"&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a tabindex="0" href="#" aria-current="page" &gt;Home &lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a href="#da_pe"&gt;Datos Personales&lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a href="#parrafos"&gt;Párrafos&lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a href="#im_ic"&gt;Imagenes e íconos&lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a href="#table"&gt;Tablas&lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a href="#foco"&gt;Foco&lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;li&gt;<br>
+                        &lt;a href="#tooltip"&gt;Tooltips&lt;/a&gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;/ul&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;/nav&gt;<br>
+                        &lt;/header&gt;<br><br>
+                    </code>
+        </section>
+
+        <section class="sc1">
+            <form class="container">
+
+                <h2 tabindex="0" id="da_pe">Datos Personales</h2>
+
+                <formulario1>
+                    <label for="fnac" class="fnac">Fecha nac.:</label>
+                    <input class="form" tabindex="0" id="fnac" name="fnac" type="text"
+                        aria-label="Ingresar fecha de nacimiento"><br><br>
+
+                    <label for="user" id="lbl-nomp">Nombre:</label>
+                    <input tabindex="" id="user" type="text" class="form" name="user"
+                        aria-labelledby="lbl-nomp"><br><br>
+
+                    <label for="fecha" class="fecha">Fecha *:</label>
+                    <input tabindex="" id="fecha" type="text" class="form" name="fecha" aria-describedby="tip-fecha">
+                    <div role="tooltip" id="tip-fecha">formato: dd/mm/aaaa</div>
+                </formulario1>
+            </form><br>
+
+            <h3>Código HTML</h3>
+            <code class="cod">
+                &lt;label for="fnac" class="fnac"&gt;Fecha nac.:&lt;/label&gt;<br>
+                &lt;input class="form" tabindex="0" id="fnac" name="fnac" type="text"<br>
+                        aria-label="Ingresar fecha de nacimiento"&gt;<br>
+
+                    &lt;label for="user" id="lbl-nomp"&gt;Nombre:&lt;/label&gt;<br>
+                    &lt;input tabindex="" id="user" type="text" class="form" name="user"
+                        aria-labelledby="lbl-nomp"&gt;<br>
+
+                    &lt;label for="fecha" class="fecha"&gt;Fecha *:&lt;/label&gt;<br>
+                    &lt;input tabindex="" id="fecha" type="text" class="form" name="fecha" aria-describedby="tip-fecha"&gt;<br>
+                    &lt;div role="tooltip" id="tip-fecha">formato: dd/mm/aaaa&lt;/div&gt;<br>
+            </code><br>
+        </section>
+
+        <section class="sc1">
+            <h2 id="parrafos" tabindex="0">Párrafos</h2>
+            <parrafo1 class="p1">
+                <p>Para este ejemplo se necesita tener las etiquetas adecuadas para la accesibilidad
+                    teniendo en cuenta que se pueden poner las correctas instrucciones en la estructura.<br><br><em> Se
+                        deben
+                        poner, para tener el manejo secuencial del teclado la etiqueta “tabindex” con el número en
+                        secuencia
+                        que
+                        se desee.</em><br>
+                    Por otro lado, se debe de colocar el atributo “aria-lebel” con la indicación para que el usuario con
+                    discapacidad vial le sea más fácil seguir las instrucciones.
+                </p>
+            </parrafo1><br><br>
+
+            <parrafo2 class="p1">
+                <p>
+                    El foco se tiene que distinguir suficientemente para garantizar que las personas con visión baja
+                    puedan
+                    distinguir los componentes activos de la interfaz de usuario y los gráficos.<br> Además,
+                    cualquier información visual para representar el foco debe tener una relación de contarse mínima de
+                    3:1.
+                </p>
+            </parrafo2><br><br>
+        </section>
+
+        <section class="sc1">
+            <h2 id="im_ic" tabindex="0" class="header">Imagenes e íconos</h2>
+
+            <h3>Imagen de gato</h3>
+            <img tabindex="0" src="./assets/img/Cat.png" alt="" class="cat" width="300" aria-labelledby="Cat"
+                role="img">
+            <p id="Cat">Hermoso Gato Negro</p>
+
+            <h3>Ícono de accesibilidad</h3>
+            <a href="https://a11ylab.com/">
+                <img tabindex="0" src="./assets/img/Accessibility.svg.png" alt="" class="insta"
+                    aria-label="Siguenos en Accessibility Lab" role="img"></a>
+
+            <h3>Código HTML</h3>
+            <code class="cod">
+                &LT;img tabindex="0" src="./assets/img/Cat.png" alt="" class="cat" width="300"<br>
+                aria-labelledby="Cat" role="img"&GT;<br>
+                &LT;p id="Cat"&GT;Hermoso Gato Negro&LT;/p&GT;<br><br>
+
+                &lt;a href="https://a11ylab.com/"&gt;<br>
+                    &lt;img tabindex="0" src="./assets/img/Accessibility.svg.png" alt=""<br>
+                    class="insta" aria-label="Siguenos en Accessibility Lab"<br>
+                        role="img"&gt;&lt;/a&gt;
+            </code><br>
+
+            <p>
+                En este ejemplo, un documento está disponible para descargar en tres formatos diferentes
+                identificados<br>
+                por íconos de formato dentro de los enlaces de texto. Tienen las alternativas de texto "HTML",<br>
+                "Documento de Word" y "PDF" para distinguir el tipo de archivo para cada enlace. <br><br>
+
+                <a href="…">
+                    2012 Annual report and accounts
+                    <img src="./assets/img/html5logo.png" alt="HTML"> (43KB)
+                </a>, also available in
+                <a href="…">
+                    <img src="./assets/img/worddocument.png" alt="Word document"> (254KB)
+                </a>
+                or
+                <a href="…">
+                    <img src="./assets/img/pdfdocument.png" alt="PDF"> (353KB)
+                </a>
+                format.
+            </p>
+
+            <h3>Código HTML</h3>
+            <code class="cod">
+                &lt;a href="…"&gt;<br>
+                    2012 Annual report and accounts <br>
+                    &lt;img src="./assets/img/html5logo.png" alt="HTML"> (43KB) <br>
+                &lt;/a&gt;, also available in <br>
+                &lt;a href="…"&gt; <br>
+                    &lt;img src="./assets/img/worddocument.png" alt="Word document"> (254KB) <br>
+                &lt;/a&gt; <br>
+                or <br>
+                &lt;a href="…"&gt;<br>
+                    &lt;img src="./assets/img/pdfdocument.png" alt="PDF"> (353KB)<br>
+                &lt;/a&gt;<br>
+                format.<br>
+            </code> <br>
+
+        </section>
+
+        <section class="sc1">
+            <h2 id="table" tabindex="0" class="header">Apartado de Tablas</h2>
+
+            <h3 tabindex="0">Tabla Simple</h3>
+            <table border="1" width="400px" style="text-align: center;">
+                <caption>Tabla simple</caption>
+                <tr>
+                    <th scope="col">Taller</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Aula</th>
+                </tr>
+                <tr>
+                    <th scope="row">Accesibilidad Web</th>
+                    <td>9:00am</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <th scope="row">Documentos Digitales Accesibles</th>
+                    <td>2:00pm</td>
+                    <td>P</td>
+                </tr>
+            </table><br><br>
+
+            <table border="1" width="300px" style="text-align: center;">
+                <caption>Porcentajes de votos</caption>
+                <tr>
+                    <th rowspan="2" id="n">Nulo</th>
+                    <th colspan="3" id="p">Partido</th>
+                </tr>
+                <tr>
+                    <th id="pa" headers="p">A</th>
+                    <th id="pb" headers="p">B</th>
+                    <th id="pc" headers="p">C</th>
+                </tr>
+                <tr>
+                    <td headers="n">10%</td>
+                    <td headers="p pa">30%</td>
+                    <td headers="p pb">20%</td>
+                    <td headers="p pc">40%</td>
+                </tr>
+            </table><br><br>
+
+            <table border="1" width="600px" style="text-align: center;">
+                <caption>Tabla con elementos</caption>
+                <tbody>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido P</th>
+                        <th>Apellido M</th>
+                        <th>Teléfono</th>
+                        <th>Edad</th>
+                        <th>Documento</th>
+                    </tr>
+                    <tr>
+                        <td>Lolo</td>
+                        <td>Perz</td>
+                        <td>Loas</td>
+                        <td>23234</td>
+                        <td>43</td>
+                        <td><a href="./assets/doc/Yamaha_RX-V377.pdf" target="_blank">
+                                <img src="./assets/img/PDF_icon.svg.png" width="35px" height="35px"
+                                    alt="Este es un pdf que se puede descargar" border="0" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>Gatos</td>
+                        <td>Pardos</td>
+                        <td>Serenade</td>
+                        <td>6724567245</td>
+                        <td>32</td>
+                        <td style="text-align: center;"><a href="./assets/doc/product-pdf.pdf" target="_blank">
+                                <img src="./assets/img/PDF_icon.svg.png" width="35px" height="35px"
+                                    alt="Este es un pdf que se puede descargar" border="0" /></a></td>
+                    </tr>
+                    <tr>
+                        <td>Luan</td>
+                        <td>Huala</td>
+                        <td>Renis</td>
+                        <td>4551512515</td>
+                        <td>12</td>
+                        <td style="text-align: center;"><a href="./assets/doc/m700_m900_m900x_tiny_ug_es.pdf"
+                                target="_blank">
+                                <img src="./assets/img/PDF_icon.svg.png" width="35px" height="35px"
+                                    alt="Este es un pdf que se puede descargar" border="0" /></a></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+
+            <div class="deque-table-sortable-group">
+                <table class="deque-table-sortable" role="grid" aria-readonly="true">
+                    <caption>People, Ages, and Favorite Colors</caption>
+                    <thead>
+                        <tr role="row">
+                            <th role="columnheader" scope="col">
+                                <button class="sortableColumnLabel">
+                                    "Index"
+                                </button>
+                            </th>
+                            <th role="columnheader" scope="col">
+                                <button class="sortableColumnLabel">
+                                    "Name"
+                                </button>
+                            </th>
+                            <th role="columnheader" scope="col">
+                                <button class="sortableColumnLabel">
+                                    "Age"
+                                </button>
+                            </th>
+                            <th role="columnheader" scope="col">
+                                <button class="sortableColumnLabel">
+                                    "Favorite Color"
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr role="row">
+                            <th scope="row" role="rowheader">1</th>
+                            <td role="gridcell">Myk</td>
+                            <td role="gridcell">33</td>
+                            <td role="gridcell">Purple</td>
+                        </tr>
+                        <tr role="row">
+                            <th scope="row" role="rowheader">2</th>
+                            <td role="gridcell">Hannah</td>
+                            <td role="gridcell">28</td>
+                            <td role="gridcell">Blue</td>
+                        </tr>
+                        <tr role="row">
+                            <th scope="row" role="rowheader">3</th>
+                            <td role="gridcell">Salim</td>
+                            <td role="gridcell">7</td>
+                            <td role="gridcell">Green</td>
+                        </tr>
+                        <tr role="row">
+                            <th scope="row" role="rowheader">4</th>
+                            <td role="gridcell">Greg</td>
+                            <td role="gridcell">45</td>
+                            <td role="gridcell">Orange</td>
+                        </tr>
+                        <tr role="row">
+                            <th scope="row" role="rowheader">5</th>
+                            <td role="gridcell">Caitlin</td>
+                            <td role="gridcell">21</td>
+                            <td role="gridcell">Red</td>
+                        </tr>
+                        <tr role="row">
+                            <th scope="row" role="rowheader">6</th>
+                            <td role="gridcell">Cyan</td>
+                            <td role="gridcell">35</td>
+                            <td role="gridcell">Burgundy</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span id="liveRegion" aria-live="polite" readCaptions="false"></span>
+            </div><br>
+        </section>
+
+        <parrafo2 class="pr_2">
+            <p>
+                El foco se tiene que distinguir suficientemente para garantizar que las personas con visión baja puedan
+                distinguir los componentes activos de la interfaz de usuario y los gráficos significativos. Además,
+                cualquier información visual para representar el foco debe tener una relación de contarse mínima de 3:1.
+            </p>
+        </parrafo2><br><br>
+
+        <formulario2>
+            <label aria-label="Nombre" for="nom">Nombre:</label>
+            <input aria-label="Nombre: Introducir su nombre" class="form" type="text" id="nom"><br><br>
+
+            <label aria-label="Comentario" for="com">Comentario:</label>
+            <textarea class="form" id="com"></textarea>
+        </formulario2><br><br>
+
+        <button aria-pressed="true">Test</button>
+
+        <div class="tabs">
+            <button>Description</button>
+            <button>Rewiews</button>
+            <button>Changelog</button>
+        </div>
+
+        <div role="tablist">
+            <button role="tab" aria-expanded="true">Description</button>
+            <button role="tab" aria-expanded="false">Rewiews</button>
+            <button role="tab" aria-expanded="false">Changelog</button>
+        </div>
+
+    </main>
+    <script src="./assets/js/ham.js" defer></script>
+</body>
+
+</html>
